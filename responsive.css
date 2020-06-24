@@ -1,4 +1,4 @@
-@media (max-width:1000px) {
+@media all and (max-width:1000px) {
   /* Tambahkan CSS untuk lesson */
  .pakets {
     width:100%;
@@ -19,7 +19,7 @@
 
 }
 
-@media (max-width:670px) {
+@media all and (max-width:670px) {
   /* Ubah width milik lesson ke 100% */
   .pakets {
     width:100%;
@@ -59,6 +59,14 @@
   margin-bottom: 10px;
   }
 
+  .header-right {
+    display:none;
+  }
+
+  fas fa-bars menu-icon {
+    display:block;
+  }
+  
   footer {
     text-align:center;
   }
