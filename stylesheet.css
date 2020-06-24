@@ -42,21 +42,20 @@ header {
 
 .header-right {
   float: right;
-  background-color: #3498db;
+  margin-right: -25px;
   transition: all 0.5s;
 }
 
-.header-right:hover {
-  float: right;
+.header-right a:hover {
   background-color: rgba(255, 255, 255, 0.3);
-  transition: all 0.5s;
 }
 
 .header-right a {
   line-height: 65px;
   padding: 0 25px;
   color: white;
-  display: block;
+  display:inline-block;
+  float: left;
 }
 
 .container {
@@ -245,4 +244,12 @@ footer {
   @keyframes moveMotor {
       from {left: 100%;}
       to   {left: -150px;}
+  }
+
+  fas fa-bars menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    display: none;
   }
