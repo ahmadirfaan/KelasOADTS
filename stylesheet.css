@@ -23,6 +23,42 @@ a {
   clear: left;
 }
 
+header {
+  height: 65px;
+  width: 100%;
+  background-color: #d35400;
+  position:fixed;
+  top:0;
+  z-index:10;
+  opacity:0.9;
+}
+
+.header-left {
+  float: left;
+  color:White;
+  font-size: 32px;
+  margin:10px;
+}
+
+.header-right {
+  float: right;
+  background-color: #3498db;
+  transition: all 0.5s;
+}
+
+.header-right:hover {
+  float: right;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+}
+
 .container {
   max-width: 1170px;
   width:100%
@@ -154,7 +190,14 @@ a {
   display:inline-block;
 }
 
+.bagiantambahanimg {
+  float: inherit;
+  margin:5px;
+  width:200px;
+}
+
 footer {
+    margin-top:0px;
     height: 150px;
     padding: 20px;
     color: white;
