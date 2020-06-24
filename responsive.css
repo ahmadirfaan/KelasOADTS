@@ -60,13 +60,13 @@
   }
 
   .header-right {
-    display:none;
+    visibility: hidden;
   }
 
-  fas fa-bars menu-icon {
+.menu-icon {
     display:block;
   }
-  
+
   footer {
     text-align:center;
   }
