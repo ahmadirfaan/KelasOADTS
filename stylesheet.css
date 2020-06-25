@@ -23,6 +23,15 @@ a {
   clear: left;
 }
 
+input,textarea {
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  font-size: 18px;
+  border: 1px solid #dee7ec;
+}
+
 header {
   height: 65px;
   width: 100%;
@@ -195,67 +204,51 @@ header {
   width:200px;
 }
 
-footer {
-    margin-top:0px;
-    height: 150px;
-    padding: 20px;
-    color: white;
-    background-color: #00a2c6;
-    font-weight: bold;
-}
-.footer-logo {
-    float: left;
-    font-size: 32px;
-}
-.footer-list {
-    float: right;
-}
-.footer-list li {
-    padding-bottom:10px;
-    list-style-type:none ;
-  }
 
-.footer-list li:hover {
-    opacity:0.5;
-    display:block;
-    background-color: rgba(255, 255, 255, 0.3);
-  }
 
-.animasi {
-  width: 50px;
-  height: 50px;
-  background-color: coral;
-  animation: square-to-circle 2s 1s infinite alternate;
-  margin-left : 20px;
-  margin-top: 50px;
+.profile-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
 }
 
-@keyframes square-to-circle {
-  0%  {
-    border-radius:0 0 0 0;
-    background:coral;
-    transform:rotate(0deg);
-  }
-  25%  {
-    border-radius:50% 0 0 0;
-    background:darksalmon;
-    transform:rotate(45deg);
-  }
-  50%  {
-    border-radius:50% 50% 0 0;
-    background:indianred;
-    transform:rotate(90deg);
-  }
-  75%  {
-    border-radius:50% 50% 50% 0;
-    background:lightcoral;
-    transform:rotate(135deg);
-  }
-  100% {
-    border-radius:50%;
-    background:darksalmon;
-    transform:rotate(180deg);
-  }
+.card{
+  padding-top: 30px;
+  height: 300px;
+}
+
+.profile {
+  float: left;
+  width: 50%;
+}
+
+.profile-icon {
+  position: relative;
+}
+
+.heading h3 {
+  font-weight: normal;
+}
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+  margin-bottom:20px;
 }
 
 .menu-icon {
@@ -264,4 +257,74 @@ footer {
     float: right;
     font-size: 25px;
     padding: 21px 0;
+  }
+
+  footer {
+      padding-top: 30px;
+      padding-bottom: 20px;
+      color: white;
+      background-color: #3d3a3a;
+      font-weight: bold;
+      margin-top:100px;
+  }
+
+  .footer-logo {
+      float: left;
+      font-size: 32px;
+  }
+  .footer-list {
+      float: right;
+  }
+  .footer-list li {
+      padding-bottom:10px;
+      list-style-type:none ;
+      font
+    }
+
+  .footer-list li:hover {
+      opacity:0.5;
+      display:block;
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+  .animasi {
+    width: 50px;
+    height: 50px;
+    background-color: coral;
+    animation: square-to-circle 2s 1s infinite alternate;
+    margin-left : 20px;
+    margin-top: 50px;
+  }
+
+  .heading {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
+  @keyframes square-to-circle {
+    0%  {
+      border-radius:0 0 0 0;
+      background:coral;
+      transform:rotate(0deg);
+    }
+    25%  {
+      border-radius:50% 0 0 0;
+      background:darksalmon;
+      transform:rotate(45deg);
+    }
+    50%  {
+      border-radius:50% 50% 0 0;
+      background:indianred;
+      transform:rotate(90deg);
+    }
+    75%  {
+      border-radius:50% 50% 50% 0;
+      background:lightcoral;
+      transform:rotate(135deg);
+    }
+    100% {
+      border-radius:50%;
+      background:darksalmon;
+      transform:rotate(180deg);
+    }
   }
