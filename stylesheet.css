@@ -222,10 +222,16 @@ footer {
       position: relative;
       animation-name: moveCar;
       animation-iteration-count: infinite;
-      animation-duration: 13s;
+      animation-duration: 5s;
       animation-timing-function: linear;
       animation-delay: 1s;
   }
+
+  img.road {
+    width:100%;
+    height:150px;
+  }
+
   img.motor {
       width: 60px;
       z-index: 2;
@@ -233,21 +239,21 @@ footer {
       position: relative;
       animation-name: moveMotor;
       animation-iteration-count: infinite;
-      animation-duration: 13s;
+      animation-duration: 5s;
       animation-timing-function: linear;
       animation-delay: 1s;
   }
   @keyframes moveCar {
       from {left: -150px}
-      to   {left: 100%;}
+      to   {left: 50%;}
   }
   @keyframes moveMotor {
-      from {left: 100%;}
+      from {left: 50%;}
       to   {left: -150px;}
-  }
+
 
 .menu-icon {
-    visibility: hidden;
+    display: none;
     color: white;
     float: right;
     font-size: 25px;
